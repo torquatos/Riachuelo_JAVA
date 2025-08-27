@@ -15,9 +15,15 @@ import java.util.*;
 public class exerciseOneA {
 	
 	public static void main (String[] args) {
-		var scanner = new Scanner (System.in);
+		var nameScanner = new Scanner (System.in);
 		System.out.println("Insert your name: ");
-		var name = scanner.next();
+		var name = nameScanner.next();
+		
+		var ageScanner = new Scanner (System.in);
+		System.out.println("Insert your age: ");
+		var age = ageScanner.nextInt();
+		
+		System.out.println("Hello " + name + ", you're " + age + " years old");
 	}
 
 }
