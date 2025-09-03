@@ -29,20 +29,29 @@ public class exerciseOneD {
 		System.out.println(textOne + breakLine + textTwo);		
 		String personOneName = scanner.next();
 		
-		System.out.println(textThree);
+		System.out.println(breakLine + textThree);
 		int personOneAge = scanner.nextInt();
 		
-		System.out.println(textFour);
+		System.out.println(breakLine + textFour);
 		String personTwoName = scanner.next();
 		
-		System.out.println(textFive);
+		System.out.println(breakLine + textFive);
 		int personTwoAge = scanner.nextInt();
-		
-		
 		
 		double differenceAgeOne = (personOneAge - personTwoAge);
 		double differenceAgeTwo = (personTwoAge - personOneAge);
 		
+		String textSix = "The difference, based on numbers that the age represents, resulted between " + personOneName + " minus " + personTwoName + " is " + differenceAgeOne + breakLine;
+		String textSeven = "The difference , based on numbers that the age represents, resulted between " + personTwoName + " minus " + personOneName + " is " + differenceAgeTwo + breakLine;
+		
+		
+		
+		if (personOneAge >= personTwoAge) {
+			System.out.println("The difference between the ages, in itself, is " + differenceAgeOne + " years.");
+		} else {
+			System.out.println("The difference between the ages, in itself, is " + differenceAgeTwo + " years.");
+			
+		}
 		
 		
 	}
