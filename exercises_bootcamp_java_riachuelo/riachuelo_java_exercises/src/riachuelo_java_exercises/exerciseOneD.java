@@ -44,7 +44,7 @@ public class exerciseOneD {
 		String textSix = "The difference, based on numbers that the age represents, resulted between " + personOneName + " minus " + personTwoName + " is " + differenceAgeOne + breakLine;
 		String textSeven = "The difference , based on numbers that the age represents, resulted between " + personTwoName + " minus " + personOneName + " is " + differenceAgeTwo + breakLine;
 		
-		
+		System.out.println(textSix + breakLine + textSeven + breakLine);
 		
 		if (personOneAge >= personTwoAge) {
 			System.out.println("The difference between the ages, in itself, is " + differenceAgeOne + " years.");
